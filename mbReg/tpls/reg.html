@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+
+
+        <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+        <!--
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="">
+        -->
+
+        <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
+        <!--
+        <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+        -->
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+
+        <!-- Add your site or application content here -->
+		
+        <!-- 1 and 2 新用户注册 start-->
+        <section id="user-reg-tpl" class="reg-wrapper tpl-state-active">
+        
+        	<dl class="reg-list">
+            	<dt><strong class="color-blue"></strong></dt>
+                <dd><input type="text" class="mobile-code reg-input" placeholder=" 手机号或邮箱（登录时的个人帐号）" /></dd>
+                <dd><span class="reg-input-prompt color-grey">&nbsp;</span></dd>
+            </dl>
+            <dl class="reg-list">
+            	<dt><strong class="color-blue"></strong></dt>
+                <dd class="ident-code-wrap">
+               		<div class="ident-codeimg-wrap"><img class="captcha-img" src="../img/clear.gif" /><a class="ident-codefont change-captcha-l" href="javascript:;">看不清,点图更换</a></div>
+                	<div class="ident-codeinp-wrap"><input type="text" class="ident-code reg-input" placeholder=" 输入图中字符不分大小写" /></div>
+                	
+                </dd>
+                <dd><span class="reg-input-prompt color-grey">&nbsp;</span></dd>
+            </dl>
+            <div class="reg-btn-wrapper"><button class="get-captcha-btn reg-btn btn-orange">获取验证码</button></div>
+            <!--<div class="reg-btn-wrapper"><button class="reg-btn btn-grey">35秒后重新获取</button></div>-->
+            <!--<div class="reg-btn-wrapper"><button class="re-get-captcha-btn reg-btn btn-orange">重新获取</button></div>
+            <div class="reg-btn-botfont">验证信息已发送到你的手机，请尽快查收</div>-->
+            
+            <dl class="reg-list">
+            	<dt><strong class="color-blue"></strong></dt>
+                <dd><input type="text" class="captcha-code reg-input" placeholder=" 请输入验证码" /></dd>
+                <dd><span class="reg-input-prompt color-grey">&nbsp;</span></dd>
+            </dl>
+            <div class="reg-btn-wrapper"><button class="submit-captcha-btn reg-btn btn-green">下一步</button></div>
+            
+            <footer class="main-bot mbot-footer">
+            	<p class="mb-help"><a id="help-nocode" class="mb-abtn" href="javascript:;">未收到短信验证码帮助</a></p>
+                <p class="mb-help"><a id="helpemail-nocode" class="mb-abtn" href="javascript:;">未收到邮件验证码帮助</a></p>
+                <!--<p class="mb-help"><strong>咨询</strong><a class="mobile-link mb-abtn tel-font" href="tel:4006689050">400 668 9050</a></p>-->
+            </footer>
+            
+        </section>
+        <!-- 1 and 2 新用户注册 end-->
+        <!-- 4 and 5 完善资料 start-->
+        <section id="user-reg-info-tpl" class="reg-wrapper">
+        
+        	<dl class="reg-list">
+            	<dt><strong class="color-blue"></strong></dt>
+                <dd><input type="text" class="field-name reg-input" placeholder=" 企业名称（如：中国工商银行）" /></dd>
+                <dd><span class="reg-input-prompt color-grey">可包括汉字、字母、数字和下划线</span></dd>
+            </dl>
+            
+            <dl class="reg-list marg20">
+            	<dt><strong class="color-blue"></strong></dt>
+                <dd><input type="text" class="field-account reg-input" placeholder=" 企业帐号（登录使用，请牢记）" /></dd>
+                <dd><span class="reg-input-prompt color-grey">字母开头，6-20个字符，如：ZGGSYH</span></dd>
+            </dl>
+            
+            <!--<dl class="reg-list marg20">
+            	<dt><strong class="color-blue"></strong></dt>
+                <dd><input type="text" class="field-email reg-input" placeholder=" 电子邮箱" /></dd>
+                <dd><span class="reg-input-prompt color-grey"></span></dd>
+            </dl>-->
+            
+            <dl class="reg-list marg20">
+            	<dt><strong class="color-blue"></strong></dt>
+                <dd><input type="text" class="field-coupon reg-input" placeholder=" 优惠码（非必填项）" /></dd>
+                <dd><span class="reg-input-prompt color-grey">指代理商或推广活动提供的优惠码</span></dd>
+            </dl>
+            
+            <div class="reg-btn-wrapper" style="margin-top:30px;"><button class="sub-info-btn reg-btn btn-green">提交资料</button></div>
+            
+            <footer class="main-bot marg20">
+            	<p class="mb-help"><a id="info-nocode" class="mb-abtn" href="javascript:;"><span class=" font-help-why">什么是企业名称和企业帐号</span></a></p>
+                <p class="mb-help"><a class="mobile-link mb-abtn tel-font" href="tel:4006689050">400 668 9050</a></p>
+            </footer>
+            
+        </section>
+        <!-- 4 and 5 完善资料 end-->
+        <!-- 7 完善资料 start-->
+        <section id="user-reg-success-tpl" class="reg-wrapper color-blue">
+        
+        	<h1 class="reg-success-title"><span>提交成功！</span></h1>
+            <p class="reg-success-text marg20">
+            	以下为登录平台必用信息，<br/>我们同时为您发送了短信和电子邮件，<br/>请注意留存。
+				<br/>为了您的信息安全，<br/>初次登录平台后请<a class="color-orange" href="javascript:;">修改登录密码</a>
+            </p>
+            
+            <ul class="reg-success-list marg20">
+            	<li>企业帐号：<span class="enterprise-account"></span></li>
+                <li>个人帐号：<span class="employee-account"></span></li>
+                <li>登录密码：<span class="login-pwd color-orange"></span></li>
+            </ul>
+            
+            <div class="reg-btn-wrapper marg20"><button class="login-btn reg-btn btn-green">立即登录</button></div>
+            
+            <footer class="main-bot">
+                <p class="mb-help"><a class="mobile-link mb-abtn tel-font" href="tel:4006689050">400 668 9050</a></p>
+            </footer>
+            
+        </section>
+        <!-- 7 注册成功 end-->
+        <!-- 111 弹层 start-->
+        <section id="reg-help-apv-tpl" style="display:none;">
+            <aside class="help-apv-grey"></aside>
+            <article class="help-apv-text">
+                <a href="javascript:;" class="help-apv-close">×</a>
+                <p>
+                    <strong class="color-blue">未收到短信验证码怎么办？</strong>
+    <br/>亲爱的用户，我们的短信正常都会在数秒钟内发送到您的手机，如果您未收到短信，请参照如下常见情况进行解决：
+    <br/><span class="helpapv-line-height">1、您的手机安装了360安全卫士等软件，验证码短信可能被拦截进了垃圾短信箱。请打开垃圾短信箱读取短信并将纷享销客号码添加为白名单；</span>
+    <br/><span class="helpapv-line-height">2、由于电信运营商通道故障造成了短信发送时间延迟，请耐心稍候片刻或点击重新获取验证码；</span>
+    <br/><span class="helpapv-line-height">3、如果您尝试了上述方式后均未解决，请拨打4006689050人工服务热线。</span>
+                </p>
+            </article>
+        </section>
+        <!-- 111 弹层 end-->
+        <!-- 111.2 弹层 start-->
+        <section id="reg-helpemail-apv-tpl" style="display:none;">
+            <aside class="help-apv-grey"></aside>
+            <article class="help-apv-text">
+                <a href="javascript:;" class="help-apv-close">×</a>
+                <p>
+                    <strong class="color-blue">未收到邮箱验证码怎么办？</strong>
+    <br/>亲爱的用户，我们的验证码邮件正常都会在数秒钟内发送，如果您未收到邮件，请参照如下常见情况进行解决：
+    <br/><span class="helpapv-line-height">1、请检测您所处的网络环境是否正常，网速慢也会影响邮箱收取邮件的速度；</span>
+    <br/><span class="helpapv-line-height">2、如果您未收到邮件提醒，通常情况都是邮件被拦截进入了垃圾邮件箱，请您检查垃圾邮件箱，获取验证码；</span>
+    <br/><span class="helpapv-line-height">3、如果垃圾邮件箱里也没用，请耐心稍候片刻或点击重新获取验证码。</span>
+    <br/><span class="helpapv-line-height">如果您尝试了上述方式后均未解决，或存有其他疑问，请通过4006689050热线或QQ在线咨询获取人工协助。</span>
+                </p>
+            </article>
+        </section>
+        <!-- 111.2 弹层 end-->
+        <!-- 222 弹层 start-->
+        <section id="reg-info-apv-tpl" style="display:none;">
+        	<aside class="help-apv-grey"></aside>
+            <article class="help-apv-text">
+                <a href="javascript:;" class="help-apv-close">×</a>
+                <p>
+                    <strong class="color-blue">什么是企业名称？</strong>
+    <br/>企业名称是指您所在企业或团队的名称，最多50个字符，可包括汉字、字母、数字和下划线。
+    例如：361度运动服饰、工商银行个金部。<br/>
+                    <strong class="helpapv-line-height color-blue">什么是企业帐号？</strong>
+    <br/>企业帐号用于识别您所注册的纷享销客平台，主要用于登录平台时使用。一般为公司名称的首字母缩写，或是公司的英文名称，6-20个字符，可包括字母、数字和下划线，可根据您的情况自行设定。
+    例如：中国工商银行的企业帐号可设置为ZGGSYH。
+    
+                </p>
+            </article>
+        </section>
+        <!-- 222 弹层 end-->
+        <!-- 333 弹层 start-->
+        <section id="reg-invite-apv-tpl" style="display:none;">
+        	<aside class="invite-apv-grey">
+                <article class="invite-apv-text">
+                    <a href="javascript:;" class="help-apv-close">×</a>
+                    <div class="invite-apvmain-wrap">
+                        <h1 class="invite-apvm-title color-blue">目前已有3家企业向您发出邀请：</h1>
+                        
+                        <div class="invite-apvm-section marg10">
+                            <h2 class="invite-apvm-name color-blue">中国移动通信集团中国移动通信</h2>
+                            <ul class="invite-apvm-list">
+                                <li><strong>企业帐号：</strong><span>zgyd</span></li>
+                                <li><strong>邀<i class="invite-font-space"></i>请<i class="invite-font-space"></i>人：</strong><span>张海波</span></li>
+                                <li><strong>邀请时间：</strong><span>2013年9月11日</span></li>
+                            </ul>
+                            <div class="invite-apvm-btnwrap marg10"><button class="go-login-btn reg-btn btn-green">直接登录</button></div>
+                        </div>
+                        
+                        <div class="invite-apvm-section marg10">
+                            <h2 class="invite-apvm-name color-blue">中国移动通信集团中国移动通信</h2>
+                            <ul class="invite-apvm-list">
+                                <li><strong>企业帐号：</strong><span>zgyd</span></li>
+                                <li><strong>邀<i class="invite-font-space"></i>请<i class="invite-font-space"></i>人：</strong><span>张海波</span></li>
+                                <li><strong>邀请时间：</strong><span>2013年9月11日</span></li>
+                            </ul>
+                            <div class="invite-apvm-btnwrap marg10"><button class="go-login-btn reg-btn btn-green">直接登录</button></div>
+                        </div>
+                        
+                        <div class="invite-apvm-section marg10">
+                            <h2 class="invite-apvm-name color-blue">中国移动通信集团中国移动通信</h2>
+                            <ul class="invite-apvm-list">
+                                <li><strong>企业帐号：</strong><span>zgyd</span></li>
+                                <li><strong>邀<i class="invite-font-space"></i>请<i class="invite-font-space"></i>人：</strong><span>张海波</span></li>
+                                <li><strong>邀请时间：</strong><span>2013年9月11日</span></li>
+                            </ul>
+                            <div class="invite-apvm-btnwrap marg10"><button class="go-login-btn reg-btn btn-green">直接登录</button></div>
+                        </div>
+                        
+                        <div class="invite-apvmain-remind marg10">注：登录密码请查阅当时邀请您的短信或邮件</div>
+                        <div class="invite-apvmain-btngo marg10"><button class="back-login-btn reg-btn btn-green">继续注册</button></div>
+                    </div>
+                </article>
+            </aside>
+        </section>
+        
+        <iframe id="ios-show-tip" src="data:text/plain" frameborder="0" style="display: none;"></iframe>
+        <!-- 222 弹层 end-->
+        <script src="../js/underscore-min.js"></script>
+        <!--<script src="../js/vendor/jquery-2.0.3.min.js"></script>-->
+        <script src="../js/vendor/zepto.min.js"></script>
+        <script src="../js/helper.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/reg.js"></script>
+    </body>
+</html>

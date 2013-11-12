@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+
+
+        <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+        <!--
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="">
+        -->
+
+        <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
+        <!--
+        <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+        -->
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body class="tpl-findpwd">
+
+        <!-- Add your site or application content here -->
+		
+        <!-- 找回密码 1 start-->
+        <section id="user-findpwd-tpl" class="reg-wrapper view-panel tpl-state-active">
+        
+        	<dl class="reg-list">
+            	<dt><strong class="color-blue"></strong></dt>
+                <dd><input type="text" class="mobile-code reg-input" placeholder=" 手机号/邮箱" /></dd>
+                <dd><span class="reg-input-prompt color-grey">请输入使用平台时绑定的手机号或邮箱</span></dd>
+            </dl>
+            <div class="reg-btn-wrapper"><button class="get-captcha-btn reg-btn btn-orange">获取验证码</button></div>
+            <!--<div class="reg-btn-wrapper"><button class="reg-btn btn-grey">35秒后可重新获取验证码</button></div>-->
+            
+            <dl class="reg-list">
+            	<dt class="marg10"><strong class="color-blue"></strong></dt>
+                <dd><input type="text" pattern="[0-9]*" class="captcha-code reg-input" placeholder=" 验证码" /></dd>
+                <dd><span class="reg-input-prompt color-grey">请输入短信或邮箱中获得的验证码</span></dd>
+            </dl>
+            <div class="reg-btn-wrapper"><button class="submit-captcha-btn reg-btn btn-green">提交</button></div>
+            
+            <footer class="main-bot marg20">
+                <p class="mb-help"><strong>咨询</strong><a class="mb-abtn tel-font mobile-link" href="tel:4006689050">400 668 9050</a></p>
+            </footer>
+            
+        </section>
+        <!-- 找回密码 1 end-->
+        <!-- 找回密码 2 start-->
+        <section id="findpwd-choseuser-tpl" class="findpwd-wrapper view-panel">
+            <div class="employee-list">
+               <!--<article class="fpw-text-wrap">
+                    <h3 class="fpwt-name color-again">北京易动纷享科技有限责任公司</h3>
+                    <ul class="fpwt-list">
+                        <li><strong class="color-grey">企业帐号：</strong><span class="color-again">fs张海波张海波张海波张海波张海波张海波张海波张海波张海波</span></li>
+                        <li><strong class="color-grey">个人帐号：</strong><span class="color-again">Zhanghbassssssssssssssssssssssssssssssssssssssssssss（<a href="javascript:;" class="reset-pwd-l fpwt-name-apv">重置密码</a>）</span></li>
+                        <li><strong class="color-grey">个人姓名：</strong><span class="color-again">张海波（<span class="fpwt-name-apv color-grey">管理员</span>）</span></li>
+                    </ul>
+                </article>
+                <article class="fpw-text-wrap">
+                    <h3 class="fpwt-name color-again">北京易动纷享科技有限责任公司</h3>
+                    <ul class="fpwt-list">
+                        <li><strong class="color-grey">企业帐号：</strong><span class="color-again">fs</span></li>
+                        <li><strong class="color-grey">个人帐号：</strong><span class="color-again">Zhanghb（<a href="javascript:;" class="fpwt-name-apv">重置密码</a>）</span></li>
+                        <li><strong class="color-grey">个人姓名：</strong><span class="color-again">张海波</span></li>
+                    </ul>
+                </article>
+                <article class="fpw-text-wrap">
+                    <h3 class="fpwt-name color-again">北京易动纷享科技测试帐号</h3>
+                    <ul class="fpwt-list">
+                        <li><strong class="color-grey">企业帐号：</strong><span class="color-again">Devtest</span></li>
+                        <li><strong class="color-grey">个人帐号：</strong><span class="color-again">Zhanghb（<span class="fpwt-name-apv color-grey">已停用</span>）</span></li>
+                        <li><strong class="color-grey">个人姓名：</strong><span class="color-again">张海波</span></li>
+                    </ul>
+                </article>-->
+            </div>
+            <footer class="main-bot marg20">
+                <p class="mb-help"><strong>咨询</strong><a class="mb-abtn tel-font mobile-link" href="tel:4006689050">400 668 9050</a></p>
+            </footer>
+        </section>
+        <!-- 找回密码 2 end-->
+        <!-- 找回密码 3 start-->
+        <section id="findpwd-again-tpl" class="reg-wrapper view-panel">
+       		<h2 class="fpw-title color-again">请输入您的新密码</h2>
+        	<dl class="reg-list marg20">
+            	<dt ><strong class="color-blue"></strong></dt>
+                <dd><input type="password" class="new-pwd mobile-code reg-input" placeholder=" 新密码" /></dd>
+                <dd><span class="reg-input-prompt color-grey"></span></dd>
+            </dl>
+            <dl class="reg-list">
+            	<dt class="marg20"><strong class="color-blue"></strong></dt>
+                <dd><input type="password" class="confirm-pwd mobile-code reg-input" placeholder=" 确认密码" /></dd>
+                <dd><span class="reg-input-prompt color-grey"></span></dd>
+            </dl>
+            <div class="reg-btn-wrapper marg20"><button id="findpwd-btn" class="f-sub reg-btn btn-green">提交</button><br/><a
+                    href="#" class="prev-step-l">上一步</a></div>
+            <footer class="main-bot marg40">
+                <p class="mb-help"><strong>咨询</strong><a class="mb-abtn tel-font mobile-link" href="tel:4006689050">400 668 9050</a></p>
+            </footer>
+        </section>
+        <!-- 找回密码 3 end-->
+        <!-- 找回密码 弹层 start-->
+        <section id="findpwd-apv-tpl" style="display:none;">
+        	<aside class="help-apv-grey"></aside>
+            <article class="findpwd-apv-text">
+				<span>密码重置成功！</span>
+            </article>
+        </section>
+        <iframe id="ios-show-tip" src="data:text/plain" frameborder="0" style="display: none;"></iframe>
+        <!-- 找回密码 弹层 end-->
+        <script src="../js/underscore-min.js"></script>
+        <!--<script src="../js/vendor/jquery-2.0.3.min.js"></script>-->
+        <script src="../js/vendor/zepto.min.js"></script>
+        <script src="../js/helper.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/findpwd.js"></script>
+    </body>
+</html>

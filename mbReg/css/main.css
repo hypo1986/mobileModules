@@ -1,0 +1,369 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+	font-family:'Microsoft YaHei';
+    font-size: 1em;
+    line-height: 1.4;
+	background-color:#ededed;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+a {
+    color: #00e;
+}
+
+a:visited {
+    color: #551a8b;
+}
+
+a:hover {
+    color: #06e;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/* Prevent callout */
+
+.nocallout {
+    -webkit-touch-callout: none;
+}
+
+.pressed {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+
+textarea[contenteditable] {
+    -webkit-appearance: none;
+}
+
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
+   they have been set as display: none */
+
+.gifhidden {
+    position: absolute;
+    left: -100%;
+}
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0;
+    direction: ltr;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -999em;
+}
+
+.ir br {
+    display: none;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/**
+ * Clearfix helper
+ * Used to contain floats: h5bp.com/q
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+input[type="text"], input[type="email"], input[type="search"], input[type="password"], input[type="number"] {
+   -webkit-appearance: none;/*去 input 默认样式*/
+   -moz-appearance: none; /* mobile firefox too! */
+   outline:none;
+   padding:0;
+ }
+h1,h2,h3,h4,strong{font-weight:normal;}
+.marg20{margin-top:20px !important;}
+.marg40{margin-top:40px !important;}
+.marg10{margin-top:10px;}
+.color-blue{color:#4e6274;}
+.color-again{color:#65686d;}
+.color-grey{color:#b5b5b5 !important;}
+.color-white{color:#ffffff;}
+.color-orange{color:#f26f00;}
+.font-help-why{font-size:80% !important;}
+.helpapv-line-height{display:inline-block;padding-top:8px;}
+/* 1 and 2 新用户注册 注册成功 */
+.reg-wrapper{
+    display: none;
+    padding:6% 8%;
+}
+/*找回密码 strat*/
+article,h2,h3,ul,li{padding:0;margin:0;}
+.findpwd-wrapper{padding:3% 4%;}
+.fpw-title{font-size:110%;}
+.fpw-text-wrap{margin-top:10px;border-radius:10px;box-shadow:1px 1px 3px #CCC,-1px -1px 3px #ccc;overflow:hidden;}
+.fpw-text-wrap h3.fpwt-name{background-color:#f0f0f0;line-height:2;padding-left:20px;font-size:100%;border-radius:10px 10px 0 0;}
+.fpw-text-wrap h3.fpwt-name .fpwt-name-apv,
+.fpw-text-wrap a.fpwt-name-apv{font-size:100%;color:#7ea4c8;text-decoration:none;}
+.fpw-text-wrap a.fpwt-name-apv:hover{color:#7ea4c8;}
+.fpw-text-wrap .fpwt-list{background-color:#ffffff;padding-top:12px;padding-bottom:12px;border-radius:0 0 10px 10px;}
+.fpw-text-wrap .fpwt-list li{line-height:1.5;padding-left:20px;margin-top:0px;font-size:100%;list-style:none;}
+.fpw-text-wrap .fpwt-list li span{word-break:break-all;}
+.findpwd-apv-text{background:rgba(230,230,230,1);position:fixed;top:30%;left:5%;right:5%;border-radius:10px;color:#4f6273;text-align:center;padding:40px 0;}
+.findpwd-apv-text span{background:url(11.png) no-repeat left;height:35px;line-height:35px;display:inline-block;padding-left:40px;font-size:130%;}
+/*找回密码 end*/
+
+dl,dt,dd{padding:0;margin:0;}
+.reg-list{}
+.reg-list dt{font-size:105%;}
+.reg-list dd{margin-top:3px;}
+.reg-input{border:#c1c1c1 solid 1px;border-radius:0px;width:100%;background-color:#ffffff;-webkit-tap-highlight-color:rgba(0,0,0,0);text-indent:5px;font-size:100%;line-height:normal;height:33px;box-shadow:1px 1px 0 #e2e2e2;}
+.reg-inp-fail{border-color:#f26f00;}
+.reg-input-prompt{font-size:90%;display:block;margin-top:-1px;}
+
+.reg-btn-wrapper{margin-top:10px;text-align: center;}
+.reg-btn{background-color:#f26f00;color:#ffffff;border:0px;border-radius:0px;font-size:105%;line-height:1.8;width:100%;margin-bottom:20px;}
+.btn-orange{background-color:#f26f00;background:-webkit-gradient(linear,0% 0%,0% 100%,from(#fa6e00),to(#e86400));box-shadow:0px 1px 0px #eecdb2;}
+.btn-green{background-color:#8abd04;background:-webkit-gradient(linear,0% 0%,0% 100%,from(#95be02),to(#82ac1c));box-shadow:0px 1px 0px #d3dfb9;}
+.btn-grey{background-color:#bebfbf;}
+
+.main-bot{}
+.main-bot .mb-help{margin:10px auto 0 auto;color:#65686d;display:block;text-align:center;}
+.main-bot .mb-help strong{font-size:90%;;margin-right:10px;}
+.mb-abtn{border:#b9c0c6 solid 1px;border-radius:3px;color:#65686d;line-height:1.5;display:inline-block;text-align:center;text-decoration:none;background:-webkit-gradient(linear,0% 0%,0% 100%,from(#f6f7f7),to(#dddede));font-weight:bold;width:12.2em;font-size:90%;}
+.mb-abtn:hover{color:#4e6274;}
+.tel-font{font-weight:900;}
+
+/* 7 注册成功 */
+.reg-success-title{text-align:center;font-size:140%;}
+.reg-success-title span{background:url(11.png) no-repeat left;height:35px;line-height:35px;display:inline-block;padding-left:40px;}
+.reg-success-text{font-size:90%;font-weight:bold;text-align:center;line-height:1.5;}
+.reg-success-text a{text-decoration:none;}
+.reg-success-text a:hover{color:#f26f00;}
+.reg-success-list{border:#9e9e9e solid 1px;border-radius:5px;box-shadow:0 1px 1px #ffffff inset,0 1px 1px #ffffff;padding:5px 0;}
+.reg-success-list li{font-size:100%;padding-left:10%;margin-top:5px;list-style:none;font-weight:bold;}
+.reg-success-list li:last-child{margin-bottom:5px;}
+
+/* 111 and 222 弹层 */
+.help-apv-grey{background:rgba(165,165,165,.9);position:fixed;width:100%;height:100%;top:0;left:0;}
+.help-apv-text{background:rgba(250,250,250,.8);position:absolute;top:5%;left:5%;right:5%;border-radius:10px;color:#828282;z-index: 10;}
+.help-apv-close{font-size:240%;color:#898989;text-decoration:none;position:absolute;top:-5px;right:10px;}
+.help-apv-close:hover{color:#aeaeae;}
+.help-apv-text p{font-size:90%;padding:0px 20px;text-align:left;line-height:1.6;}
+.help-apv-text p strong{line-height:2;}
+/* invite 邀请弹层 start*/
+.invite-apv-grey{background:rgba(165,165,165,.9);padding:20px;}
+.invite-apv-text{background:rgba(250,250,250,.8);border-radius:10px;color:#828282;position:relative;overflow:hidden;}
+.invite-apv-close{font-size:240%;color:#898989;text-decoration:none;position:absolute;top:-5px;right:10px;}
+.invite-apv-close:hover{color:#aeaeae;}
+.invite-apvmain-wrap{margin:35px 20px 10px;}
+.invite-apvmain-wrap .invite-apvm-title{font-size:102%;padding:0;margin-top:10px;}
+.invite-apvmain-wrap .invite-apvm-section{border-bottom:#bebebe solid 1px;}
+.invite-apvmain-wrap .invite-apvm-section .invite-apvm-name{font-size:100%;color:#828282;}
+.invite-apvmain-wrap .invite-apvm-section .invite-apvm-list li{list-style:none;margin-top:5px;font-size:100%;}
+.invite-apvmain-wrap .invite-apvm-section .invite-apvm-list li > strong{}
+.invite-apvmain-wrap .invite-apvm-section .invite-apvm-btnwrap{}
+.invite-apvmain-wrap .invite-apvm-section .invite-apvm-btnwrap button{width:40%;margin-bottom:10px;padding-left:10px;padding-right:10px;} 
+.invite-apvmain-wrap .invite-apvmain-remind{color:#e65050;font-size:75%;}
+.invite-apvmain-wrap .invite-apvmain-btngo button{margin-bottom:10px;}
+.invite-font-space{display:inline-block;width:8px;}
+/* invite 邀请弹层 end*/
+.view-panel{
+    display: none;
+}
+.tpl-state-active{
+    display: block !important;
+}
+.btn-state-disabled{
+	background:none;
+    background-color:#bebfbf!important;
+    cursor: default ! important;
+}
+#global-loading{
+    background: #dddddd url(../img/loading.gif) no-repeat center center;
+    opacity: 0.5;
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+#user-reg-info-tpl{min-height:580px;}
+#user-reg-success-tpl{min-height:480px;}
+.tpl-findpwd .prev-step-l{
+    color: #7EA4C8;
+    font-size: 100%;
+    font-weight: bold;
+    text-decoration: none;
+}
+/*.tpl-findpwd .employee-selected{
+    background-color: rgba(0,0,0,0.4);
+}*/
+.tpl-findpwd .employee-list{
+    min-height:380px;
+    position: relative;
+}
+.tpl-findpwd .employee-list .prev-step-wrapper{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+.tpl-findpwd .employee-item{
+    position:relative;
+}
+.tpl-findpwd .employee-list .overlay{
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.4);
+    border-radius:10px;
+}
+/* 2013.11.12 start */
+.ident-code-wrap{clear:both;}
+.ident-code-wrap .ident-codeinp-wrap{margin-right:105px;}
+.ident-code-wrap .ident-codeinp-wrap .reg-input{}
+.ident-code-wrap .ident-codeimg-wrap{position:relative;width:95px;display:inline-block;height:33px;border:#c0c0c0 solid 1px;float:right}
+.ident-code-wrap .ident-codeimg-wrap .ident-codefont{color:#b2b2b2;text-decoration:none;position:absolute;bottom:-23px;left:0;;font-size:80%;}
+.reg-btn-botfont{color:#f26f00;font-size:90%;margin-top:-15px;margin-bottom:15px;}
+/*.mbot-footer{position:absolute;bottom:5%;left:50%;margin-left:-90px;}*/
+
+/* 2013.11.12 end */
+
+@media only screen and (-webkit-device-pixel-ratio:2) and (device-width:320px){
+.reg-btn{height:33px;}
+}
+@media only screen and (-webkit-device-pixel-ratio:2) and (min-device-width:360px){ 
+.mb-help strong,.mb-help a{font-weight:normal;}
+}
+@media only screen and (min-width: 800px) {
+    /* Style adjustments for viewports that meet the condition */
+	
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for viewports that meet the condition */
+	
+}
+
+
+/* add by 13 start */
+#user-reg-tpl .captcha-img{
+    width:100%;
+    height:100%;
+}
+/* add by 13 end */
