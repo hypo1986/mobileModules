@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="viewport" id="V" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" name="" href="css/style.css?a=20130306">
+<link rel="stylesheet" name="addStyle" id="addStyle" href="">
+
+<script>
+(
+function(){
+	var A=window.navigator.userAgent.toLowerCase();
+	var screenWidth = screen.width;
+	var pixelRat = window.devicePixelRatio;
+	setTimeout(function(){
+	if(/android 2.3/.test(A)){
+		document.getElementById('addStyle').setAttribute("href","css/style_android_2.css");
+		}
+		},1);
+	}
+)();
+/*(
+function(){
+	var A=window.navigator.userAgent.toLowerCase();
+	var screenWidth = screen.width;
+	var pixelRat = window.devicePixelRatio;
+	setTimeout(function(){
+	if(/mac os x/.test(A)){
+		document.getElementById('V').setAttribute("content","width=device-width, initial-scale=.5, maximum-scale=.5, user-scalable=no");
+		}
+		
+	else if(/android/.test(A)){
+		document.getElementById('V').setAttribute("content","width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, target-densityDpi=device-dpi");
+		}
+		},1);
+	}
+	
+)();*/
+</script>
+
+</head>
+
+<body>
+<!-- M1  选择验证券页
+---------------- -->
+<section class="head">
+    <a href="#" class="head_back">返回上一页</a>
+    <a href="#" class="head_cate">分类</a><a href="#" class="head_group">商圈</a>
+    <span class="head_line"></span>
+</section>
+
+<section  class="F_home">
+<ul class="Fh_list">
+   <p class="orderti F_green">我的昵称：DSDSfsfsdf123</p>
+   <div class="F_cqdlt_te pL0 pR0">
+      <span class="Fcqt_img"><a href="#"><img src="images/pro_small.png" class="Fcqt_img_wh" /></a></span>
+      <strong><a href="#" class="a_list_font">美林阁美味双人套餐阁美味a阁美味双人套餐阁阁美味双人套餐阁阁美味双人套餐阁双人...</a></strong>
+      <i class="fcqd_yesout">过期可退</i><i class="fcqd_noout">不支持退款</i>
+   </div>
+   <ul class="mini_list">
+      <li class="fcqli3">券号：<cite class="F_green">8131 4322 2341</cite> <span><i></i></span></li>
+      <li class="fcqli3">券号：<cite class="F_green">8131 4322 2341</cite> <span><i></i></span></li>
+      <li class="fcqli3">券号：<cite class="F_green">8131 4322 2341</cite> <span></span></li>
+   </ul>
+   <div class="btn_box marg40 margb20">
+       <button class="fc_btn fc_btn_o">返 回</button>
+       <button class="fc_btn">验 证</button>
+    </div>
+</ul>
+</section>
+
+<!-- M2  验证结果页
+---------------- -->
+<section class="head">
+    <a href="#" class="head_back">返回上一页</a>
+    <a href="#" class="head_cate">分类</a><a href="#" class="head_group">商圈</a>
+    <span class="head_line"></span>
+</section>
+
+<section  class="F_home">
+<ul class="Fh_list">
+   <p class="orderti F_green">我的昵称：DSDSfsfsdf123</p>
+   <div class="F_cqdlt_te pL0 pR0">
+      <span class="Fcqt_img"><a href="#"><img src="images/pro_small.png" class="Fcqt_img_wh" /></a></span>
+      <strong><a href="#" class="a_list_font">美林阁美味双人套餐阁美味a阁美味双人套餐阁阁美味双人套餐阁阁美味双人套餐阁双人...</a></strong>
+      <i class="fcqd_yesout">过期可退</i><i class="fcqd_noout">不支持退款</i>
+   </div>
+   <ul class="mini_list">
+      <li class="fcqli4">券号：<cite class="F_green">8131 4322 2341</cite> <span class="mns_do F_grey">正在验证..</span></li>
+      <li class="fcqli4">券号：<cite class="F_green">8131 4322 2341</cite> <span class="mns_yes F_green">验证成功</span></li>
+      <li class="fcqli4">券号：<cite class="mnli_cite F_green">8131 4322 2341 2342 8131 4322 2341 2342</cite> <span class="mns_fail F_red3">验证失败</span><span class="mns_grey">再次验证</span></li>
+      <li><span class="F_red3">*</span> <strong style="font-size:80%;">此券已申请退款，不能再验证了哦~</strong></li>
+      <li style="height:5px;"></li>
+      <li class="fcqli4">券号：<cite class="F_red3">8131 4322 2341</cite> <span class="mns_fail F_red3">验证失败</span><span class="mns_again">再次验证</span></li>
+   </ul>
+   <div class="btn_box marg40 margb20">
+       <button class="fc_btn width-auto">确 定</button>
+   </div>
+</ul>
+</section>
+
+<!-- M3 没有可验证的券
+---------------- -->
+<div class="Fh_hbotno"></div>
+<section  class="F_homeb box-shadow marg20 position_re Fh_nosHeight  margb20">
+   <div class="Fh_noCity_hd"><i></i></div>
+   <div class="Fh_noCity_no F_green marg40">没有可验证的团购券了哦，<br/>去看看是否还能团吧~</div>
+   <div class="Fh_noCity_no2 F_grey padb40"></div>
+   <div class="mywt_nobtn">
+      <div class="btn_box marg40"><button class="fc_btn width-auto">去看看</button></div>
+   </div>
+   <span class="Fh_noCity_apvt"></span>
+</section>
+
+<!-- M4  列表页-此商家有多个deal在售卖
+---------------- -->
+<section class="head">
+    <a href="#" class="head_back">返回首页</a>
+    <a href="#" class="head_cate">分类</a><a href="#" class="head_group">商圈</a>
+    <span class="head_line"></span>
+</section>
+
+<section  class="F_home">
+   <h4 class="list_now"><span class="F_green">王子餐厅</span> 当前有 <span class="F_green">10</span> 个团购：</h4>
+   <ul class="Fh_list">
+      <li>
+         <a href="#" class="a_list_font">
+         <img src="images/pro_small.png" class="Fhimg" />
+         <h2>【三里屯】雪梨烛光梨烛光梨烛光梨烛光梨烛光梨烛光梨烛光梨烛光sas56f4...</h2>
+         <p><strong>￥1999</strong><del>￥2999</del><span>23754人购买</span></p>
+         </a>
+      </li>
+      <li>
+         <a href="#" class="a_list_font">
+         <img src="images/pro_small.png" class="Fhimg" />
+         <h2>【三里屯】雪梨烛光梨烛光梨烛光梨烛光梨烛光梨烛光梨烛光梨烛光sas56f4...</h2>
+         <p><strong>￥1999</strong><del>￥2999</del><span>23754人购买</span></p>
+         </a>
+      </li>
+      <li>
+         <a href="#" class="a_list_font">
+         <img src="images/pro_small.png" class="Fhimg" />
+         <h2>【三里屯】雪梨烛光梨烛光梨烛光梨烛光梨烛光梨烛光梨烛光梨烛光sas56f4...</h2>
+         <p><strong>￥1999</strong><del>￥2999</del><span>23754人购买</span></p>
+         </a>
+      </li>
+   </ul>
+   <div class="Fh_laod"><i></i></div>
+</section>
+
+<!-- M5  此商家没有deal在售卖
+---------------- -->
+<div class="Fh_hbotno"></div>
+<section  class="F_homeb box-shadow marg20 position_re Fh_nosHeight  margb20">
+   <div class="Fh_noCity_hd"><i></i></div>
+   <div class="Fh_noCity_no F_green marg40">您来晚了,团购卖光了哦~</div>
+   <div class="Fh_noCity_no2 F_grey padb40">团一团,体验精彩团购生活！</div>
+   <div class="mywt_nobtn">
+      <div class="btn_box marg40"><button class="fc_btn width-auto">返回首页</button></div>
+   </div>
+   <span class="Fh_noCity_apvt"></span>
+</section>
+
+<!-- M6  minipad各种弹框
+---------------- -->
+<section class="Fh_qdown_apv box-shadow" style="display:none;">
+   <h1>验证<cite class="F_red">成功</cite>！</h1>
+   <p>请取走小票到服务台兑换。</p>
+   <span class="F_grey2">——高朋微团购——</span>
+</section>
+
+<section class="Fh_qdown_apv box-shadow" style="display:none;">
+   <h1><cite class="F_red">最多同时验证4张微团券~</cite></h1>
+   <p>您可以分批进行验证哦</p>
+   <span class="F_grey2">——高朋微团购——</span>
+</section>
+
+<section class="Fh_qdown_apv box-shadow" style="display:none;">
+   <h1 class="F_font">微团券“<cite class="F_green">3213 2321 5654</cite>”验证<cite class="F_red">成功</cite>！</h1>
+   <p>请取走小票到服务台兑换。</p>
+   <span class="F_grey2">——高朋微团购——</span>
+</section>
+
+<section class="Fh_qdown_apv box-shadow" style="display:none;">
+   <h1><cite class="F_green">3</cite>张验证成功！<cite class="F_red">1</cite>张验证失败！</h1>
+   <p>请取走小票到服务台兑换。</p>
+   <span class="F_grey2">——高朋微团购——</span>
+</section>
+
+</body>
+</html>

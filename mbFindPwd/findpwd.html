@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>找回帐户或密码 - 纷享销客</title>
+<link href="styles/base.css" rel="stylesheet" />
+<link href="styles/findpwd.css" rel="stylesheet" />
+<script type="text/javascript" src="scripts/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="scripts/underscore-min.js"></script>
+<script type="text/javascript" src="scripts/common.js"></script>
+<script type="text/javascript" src="scripts/findpwd.js"></script>
+</head>
+
+<body>
+	
+    <div class="findpwd-wrap">
+    	<h1 class="fd-title-wrap">找回帐户或密码<span>纷享销客</span></h1>
+        <!-- 找回帐户或密码 step 01 -->
+        <div class="fd-main-wrap tpl-state-active" id="user-findpwd-tpl">
+        	<dl class="reg-list">
+                <dt><input type="text" class="mobile-code reg-input" placeholder=" 手机号/邮箱" /><span class="red-xing">*</span></dt>
+                <dd><span class="reg-input-prompt color-grey">请输入有效的手机号码或邮箱</span></dd>
+            </dl>
+            <div class="reg-btn-wrapper"><button class="get-captcha-btn reg-btn btn-orange">获取验证码</button></div>
+            <!--<div class="reg-btn-wrapper"><button class="reg-btn btn-grey">35秒后可重新获取验证码</button></div>-->
+            
+            <dl class="reg-list marg30">
+                <dt><input type="text" pattern="[0-9]*" class="captcha-code reg-input" placeholder=" 验证码" /><span class="red-xing">*</span></dt>
+                <dd><span class="reg-input-prompt color-grey">请输入短信或邮箱中获得的验证码</span></dd>
+            </dl>
+            <div class="reg-btn-wrapper"><button class="submit-captcha-btn reg-btn btn-green">提交</button></div>
+        </div>
+        <!-- 找回帐户或密码 step 02 -->
+        <div class="fd-main-wrap" id="findpwd-choseuser-tpl">
+        	<h2 class="chose-title">请选择要重置的帐号</h2>
+            <table class="chose-list marg20" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>企业帐号</th>
+                        <th>企业名称</th>
+                        <th>个人帐号</th>
+                        <th>个人姓名</th>
+                        <th>帐号状态</th>
+                    </tr>
+                </thead>
+                <tbody class="employee-list">
+                    <tr>
+                        <td><div>fs</div></td>
+                        <td><div>北京易动纷享科技有限责任公司</div></td>
+                        <td><div>Zhanghb</div></td>
+                        <td><div>张海波（管理员）</div></td>
+                        <td><div><a href="javascript:;" class="fda-blue">重置密码</a></div></td>
+                    </tr>
+                    <tr>
+                        <td><div>fs</div></td>
+                        <td><div>北京易动纷享科技有限责任公司</div></td>
+                        <td><div>Zhanghb</div></td>
+                        <td><div>张海波</div></td>
+                        <td><div><a href="javascript:;" class="fda-blue">重置密码</a></div></td>
+                    </tr>
+                    <tr>
+                        <td><div>fs</div></td>
+                        <td><div>北京易动纷享科技有限责任公司</div></td>
+                        <td><div>Zhanghb</div></td>
+                        <td><div>海波测试</div></td>
+                        <td><div>已停用</div></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <!-- 找回帐户或密码 step 03 -->
+        <div class="fd-main-wrap" id="findpwd-again-tpl">
+        	<h2 class="chose-title">请输入您的新密码</h2>
+        	<dl class="reg-list marg20">
+                <dt><input type="password" class="new-pwd reg-input" placeholder=" 新密码" /></dt>
+            </dl>
+            <dl class="reg-list marg20">
+                <dt><input type="password" class="confirm-pwd reg-input" placeholder=" 确认密码" /></dt>
+            </dl>
+            <div class="reg-btn-wrapper marg30"><button class="f-sub reg-btn btn-green">立即提交</button><a href="javascript:;" class="prev-step-l fda-blue">上一步</a></div>
+        </div>
+        
+        <!-- 找回帐户或密码 step end -->
+    </div>
+
+    <div class="footer">北京易动纷享科技有限责任公司版权所有2012-2013 &nbsp; &nbsp; 京ICP备12021815号-2</div>
+    
+    <!-- 找回帐户或密码 弹层 04 -->
+    <div id="findpwd-apv-tpl" class="fn-hide">
+        <div class="fd-apv-grey"></div>
+        <div class="fd-apv-text">
+            <span>密码重置成功！</span>
+        </div>
+    </div>
+    
+</body>
+</html>
